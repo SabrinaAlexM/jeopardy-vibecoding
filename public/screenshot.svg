@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Syne:wght@700;800&amp;display=swap');
+      text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+      .font-display { font-family: 'Syne', 'Plus Jakarta Sans', system-ui, sans-serif; font-weight: 800; }
+    </style>
+    <filter id="shadow-sm" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Window Wrapper -->
+  <rect x="0" y="0" width="1200" height="760" rx="16" fill="#f8fafc" />
+  <rect x="0" y="0" width="1200" height="760" rx="16" fill="none" stroke="#cbd5e1" stroke-width="1.5" />
+
+  <!-- Window Chrome Header -->
+  <path d="M 0 16 Q 0 0 16 0 L 1184 0 Q 1200 0 1200 16 L 1200 42 L 0 42 Z" fill="#ffffff" />
+  <line x1="0" y1="42" x2="1200" y2="42" stroke="#e2e8f0" stroke-width="1" />
+  
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#ef4444" />
+  <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="21" r="6" fill="#10b981" />
+
+  <!-- URL Bar -->
+  <rect x="360" y="10" width="480" height="22" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+  <text x="600" y="25" text-anchor="middle" font-size="11" fill="#64748b" font-weight="500">https://ki-quiz.app</text>
+
+  <!-- APP HEADER (h-14: y=42 to y=98) -->
+  <rect x="0" y="42" width="1200" height="56" fill="#ffffff" />
+  <line x1="0" y1="98" x2="1200" y2="98" stroke="#e2e8f0" stroke-width="1" />
+
+  <!-- Brand Wordmark -->
+  <text x="40" y="77" font-size="22" fill="#0f172a" class="font-display">KI-Quiz</text>
+
+  <!-- Navigation Pill Tabs -->
+  <g transform="translate(480, 54)">
+    <rect x="0" y="0" width="80" height="32" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <text x="40" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">1. Fragen</text>
+
+    <rect x="90" y="0" width="85" height="32" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <text x="132" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">2. Gruppen</text>
+
+    <rect x="185" y="0" width="85" height="32" rx="8" fill="#4f46e5" />
+    <text x="227" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3. Spielen</text>
+  </g>
+
+  <!-- Header Right Utilities -->
+  <g transform="translate(980, 54)">
+    <rect x="0" y="0" width="120" height="32" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="60" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Ursprungsfragen</text>
+
+    <!-- Sound & Fullscreen Icons -->
+    <rect x="130" y="0" width="32" height="32" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <path d="M 142 16 L 146 12 L 150 12 L 150 20 L 146 20 Z" fill="#10b981" />
+
+    <rect x="170" y="0" width="32" height="32" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <path d="M 180 12 L 184 12 M 180 12 L 180 16 M 192 12 L 188 12 M 192 12 L 192 16 M 180 20 L 184 20 M 180 20 L 180 16 M 192 20 L 188 20 M 192 20 L 192 16" stroke="#4f46e5" stroke-width="1.5" />
+  </g>
+
+  <!-- MAIN PLAY VIEW CONTAINER (y=112 to y=736) -->
+
+  <!-- 1. Score Bar (y=112, h=58) -->
+  <!-- Team A -->
+  <g transform="translate(40, 112)">
+    <rect x="0" y="0" width="360" height="58" rx="12" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.5" filter="url(#shadow-sm)" />
+    <!-- Avatar -->
+    <rect x="14" y="11" width="36" height="36" rx="8" fill="#0284c7" />
+    <text x="32" y="34" text-anchor="middle" font-size="18" fill="#ffffff">🧠</text>
+    <!-- Name & Subtitle -->
+    <text x="60" y="29" font-size="15" font-weight="700" fill="#0f172a" class="font-display">Team Neuronen</text>
+    <circle cx="178" cy="24" r="3.5" fill="#0284c7" />
+    <text x="60" y="44" font-size="11" font-weight="500" fill="#64748b">Gruppe 1</text>
+    <!-- Score -->
+    <text x="344" y="38" text-anchor="end" font-size="24" font-weight="800" fill="#0369a1">300</text>
+    <text x="344" y="49" text-anchor="end" font-size="9" font-weight="700" fill="#64748b">PUNKTE</text>
+  </g>
+
+  <!-- Center Active Turn Indicator -->
+  <g transform="translate(440, 112)">
+    <rect x="0" y="4" width="240" height="50" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <text x="120" y="25" text-anchor="middle" font-size="11" font-weight="600" fill="#64748b">Am Zug:</text>
+    <rect x="40" y="29" width="160" height="20" rx="6" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1" />
+    <text x="120" y="43" text-anchor="middle" font-size="11" font-weight="700" fill="#0369a1">Team Neuronen</text>
+  </g>
+
+  <!-- Team B -->
+  <g transform="translate(720, 112)">
+    <rect x="0" y="0" width="440" height="58" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow-sm)" />
+    <!-- Avatar -->
+    <rect x="14" y="11" width="36" height="36" rx="8" fill="#ea580c" />
+    <text x="32" y="34" text-anchor="middle" font-size="18" fill="#ffffff">🤖</text>
+    <!-- Name & Subtitle -->
+    <text x="60" y="29" font-size="15" font-weight="700" fill="#0f172a" class="font-display">Team Algorithmen</text>
+    <text x="60" y="44" font-size="11" font-weight="500" fill="#64748b">Gruppe 2</text>
+    <!-- Score -->
+    <text x="424" y="38" text-anchor="end" font-size="24" font-weight="800" fill="#c2410c">200</text>
+    <text x="424" y="49" text-anchor="end" font-size="9" font-weight="700" fill="#64748b">PUNKTE</text>
+  </g>
+
+  <!-- 2. JEOPARDY BOARD GRID (y=184, h=495) -->
+  <!-- Col 1: Prompting & LLMs (x=40, w=350) -->
+  <!-- Col 2: KI im Schulzimmer (x=425, w=350) -->
+  <!-- Col 3: Ethik, Recht & Limits (x=810, w=350) -->
+
+  <!-- ROW 0: CATEGORY HEADERS (y=184, h=54) -->
+  <g transform="translate(40, 184)">
+    <rect x="0" y="0" width="350" height="54" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <circle cx="30" cy="27" r="5" fill="#0284c7" />
+    <text x="44" y="31" font-size="15" font-weight="700" fill="#0f172a" class="font-display">Prompting &amp; LLMs</text>
+    <text x="44" y="45" font-size="10" font-weight="500" fill="#94a3b8">Kategorie 1</text>
+  </g>
+
+  <g transform="translate(425, 184)">
+    <rect x="0" y="0" width="350" height="54" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <circle cx="30" cy="27" r="5" fill="#9333ea" />
+    <text x="44" y="31" font-size="15" font-weight="700" fill="#0f172a" class="font-display">KI im Schulzimmer</text>
+    <text x="44" y="45" font-size="10" font-weight="500" fill="#94a3b8">Kategorie 2</text>
+  </g>
+
+  <g transform="translate(810, 184)">
+    <rect x="0" y="0" width="350" height="54" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <circle cx="30" cy="27" r="5" fill="#059669" />
+    <text x="44" y="31" font-size="15" font-weight="700" fill="#0f172a" class="font-display">Ethik, Recht &amp; Limits</text>
+    <text x="44" y="45" font-size="10" font-weight="500" fill="#94a3b8">Kategorie 3</text>
+  </g>
+
+  <!-- ROW 1: 100 POINTS (y=248, h=100) -->
+  <!-- Col 1: Answered by Team Neuronen -->
+  <g transform="translate(40, 248)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <rect x="135" y="24" width="80" height="26" rx="6" fill="#0284c7" />
+    <text x="175" y="41" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">+100 Pkt</text>
+    <text x="175" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">Team Neuronen</text>
+  </g>
+
+  <!-- Col 2: Answered by Team Algorithmen -->
+  <g transform="translate(425, 248)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <rect x="135" y="24" width="80" height="26" rx="6" fill="#ea580c" />
+    <text x="175" y="41" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">+100 Pkt</text>
+    <text x="175" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">Team Algorithmen</text>
+  </g>
+
+  <!-- Col 3: Available 100 Points -->
+  <g transform="translate(810, 248)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 1</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">100</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <!-- ROW 2: 200 POINTS (y=358, h=100) -->
+  <g transform="translate(40, 358)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 2</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">200</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <!-- Col 2: Answered by Team Algorithmen -->
+  <g transform="translate(425, 358)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <rect x="135" y="24" width="80" height="26" rx="6" fill="#ea580c" />
+    <text x="175" y="41" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">+100 Pkt</text>
+    <text x="175" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">Team Algorithmen</text>
+  </g>
+
+  <g transform="translate(810, 358)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 2</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">200</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <!-- ROW 3: 300 POINTS (y=468, h=100) -->
+  <!-- Col 1: Answered by Team Neuronen -->
+  <g transform="translate(40, 468)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <rect x="135" y="24" width="80" height="26" rx="6" fill="#0284c7" />
+    <text x="175" y="41" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">+200 Pkt</text>
+    <text x="175" y="68" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b">Team Neuronen</text>
+  </g>
+
+  <g transform="translate(425, 468)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#6366f1" stroke-width="2" fill-opacity="0.95" filter="url(#shadow-sm)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#4f46e5">Stufe 3</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4338ca">300</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#6366f1">PUNKTE</text>
+  </g>
+
+  <g transform="translate(810, 468)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 3</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">300</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <!-- ROW 4: 400 POINTS (y=578, h=100) -->
+  <g transform="translate(40, 578)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 4</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">400</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <g transform="translate(425, 578)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 4</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">400</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <g transform="translate(810, 578)">
+    <rect x="0" y="0" width="350" height="100" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#card-shadow)" />
+    <text x="175" y="32" text-anchor="middle" font-size="11" font-weight="600" fill="#94a3b8">Stufe 4</text>
+    <text x="175" y="64" text-anchor="middle" font-size="28" font-weight="800" fill="#4f46e5">400</text>
+    <text x="175" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#94a3b8">PUNKTE</text>
+  </g>
+
+  <!-- 3. FOOTER TOOLBAR (y=695, h=45) -->
+  <line x1="40" y1="695" x2="1160" y2="695" stroke="#e2e8f0" stroke-width="1" />
+  
+  <g transform="translate(40, 710)">
+    <rect x="0" y="0" width="90" height="28" rx="6" fill="#f1f5f9" />
+    <text x="45" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">3/12 Fragen</text>
+
+    <text x="110" y="19" font-size="12" font-weight="500" fill="#64748b">Fragen bearbeiten</text>
+    <text x="240" y="19" font-size="12" font-weight="500" fill="#64748b">Gruppen</text>
+  </g>
+
+  <g transform="translate(930, 710)">
+    <rect x="0" y="0" width="100" height="28" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <text x="50" y="18" text-anchor="middle" font-size="11" font-weight="500" fill="#64748b">Board leeren</text>
+
+    <rect x="110" y="0" width="120" height="28" rx="6" fill="#4f46e5" />
+    <text x="170" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">🏆 Sieger feiern</text>
+  </g>
+</svg>
