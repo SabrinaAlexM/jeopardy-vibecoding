@@ -2,7 +2,7 @@
 
 Ein interaktives, gamifiziertes Quiz im Jeopardy-Stil für Weiterbildungen, Workshops und den Unterricht – konzipiert für das **CAS PICTS Aufbaumodul Künstliche Intelligenz** (Pädagogischer ICT-Support) und adaptable für jede Lerngruppe.
 
-![KI-Quiz Screenshot Vorschau](https://raw.githubusercontent.com/placeholder-preview.png)
+![KI-Quiz Vorschau](./public/preview.jpg)
 
 ---
 
