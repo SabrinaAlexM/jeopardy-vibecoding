@@ -1,0 +1,6 @@
+{
+  "name": "KI-Quiz",
+  "description": "Interaktives Quiz mit 3 Kategorien und 4 Schwierigkeitsstufen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
